@@ -73,6 +73,6 @@ public class WebConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginInterceptor())
                 .addPathPatterns("/**")    //添加拦截器的匹配路径，只要匹配一律拦截
-                .excludePathPatterns("/login","/static/**");   //拦截器不进行拦截的路径
+                .excludePathPatterns("/login","/register","/static/**");   //拦截器不进行拦截的路径
     }
 }
