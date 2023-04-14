@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/register.css}">
+</head>
+<body>
+<section>
+    <h1>注册</h1>
+    <form id="register-form">
+        <label>
+            <input id="form-nickname" type="text" name="nickname" class="form-register" placeholder="昵称">
+        </label>
+        <label>
+            <input id="form-username" type="text" name="username" class="form-register" placeholder="用户名"
+                   th:value="${username}">
+        </label>
+        <label>
+            <input id="form-password" type="password" name="password" class="from-register" placeholder="密码"
+                   th:value="${password}">
+        </label>
+        <button id="register" onclick="buttonAction('register','post')">注册</button>
+        <button id="back" onclick="buttonAction('login','get')">返回</button>
+        <div th:if="${registerErrorMessage}" class="error-message">
+            <p th:text="${registerErrorMessage}"></p>
+        </div>
+    </form>
+</section>
+<footer>
+    <p>版权所有 &copy; 2023 - 桐谷たけち</p>
+</footer>
+<script th:src="@{/static/register.js}"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* 设置页面背景颜色 */
+body {
+    background-color: #f1f7fc;
+}
+
+/* 设置标题的样式 */
+h1 {
+    color: #2f3542;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+/* 设置登录表单的样式 */
+#login-form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* 设置标签的样式 */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #57606f;
+}
+
+/* 设置输入框的样式 */
+input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 2px solid #dfe4ea;
+    box-sizing: border-box;
+    color: #57606f;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: transparent;
+}
+
+/* 设置输入框获取焦点时的样式 */
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #3498db;
+}
+
+/* 设置按钮的样式 */
+button {
+    background-color: #66c0f4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 20px; /* 增加按钮之间的垂直间距 */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+/* 设置按钮悬停时的样式 */
+button:hover {
+    opacity: 90%;
+}
+
+/* 设置登陆按钮的样式 */
+#login {
+    background-color: #66c0f4;
+}
+
+/* 设置注册按钮的样式 */
+#register {
+    background-color: #dfe4ea;
+    color: #57606f;
+}
+
+/* 设置页脚的样式 */
+footer {
+    background-color: #2f3542;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 设置页脚链接的样式 */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 设置错误信息的样式 */
+.error {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 3px;
+    color: #a94442;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* 设置错误消息的样式 */
+.error-message {
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 3px;
+    color: #a94442;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}

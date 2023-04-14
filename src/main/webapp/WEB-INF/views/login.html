@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/login.css}">
+</head>
+<body>
+<section>
+    <h1>资源站</h1>>
+    <form id="login-form">
+        <label>
+            <input id="form-username" type="text" name="username" class="form-login" placeholder="用户名"
+                   th:value="${username}">
+        </label>
+        <label>
+            <input id="form-password" type="password" name="password" class="from-login" placeholder="密码"
+                   th:value="${password}">
+        </label>
+        <button id="login" onclick="buttonAction('login','post')">登陆</button>
+        <button id="register" onclick="buttonAction('register','get')">注册</button>
+        <div th:if="${loginErrorMessage}" class="error-message">
+            <p th:text="${loginErrorMessage}"></p>
+        </div>
+    </form>
+</section>
+<footer>
+    <p>版权所有 &copy; 2023 - 桐谷たけち</p>
+</footer>
+<script th:src="@{/static/login.js}"></script>
+</body>
+</html>

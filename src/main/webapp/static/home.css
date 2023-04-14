@@ -1,0 +1,68 @@
+/* 设置页面背景颜色 */
+body {
+    background-color: #f1f7fc;
+}
+
+/* 设置标题的样式 */
+h1 {
+    color: #2f3542;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+/* 设置列表的样式 */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 设置列表项的样式 */
+li {
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 设置列表项悬停时的样式 */
+li:hover {
+    transform: scale(1.05);
+}
+
+/* 设置链接的样式 */
+a {
+    text-decoration: none;
+    color: #57606f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 设置页脚的样式 */
+footer {
+    background-color: #2f3542;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 设置页脚链接的样式 */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/sign.css}">
+</head>
+<body>
+<section>
+    <h1>欢迎</h1>>
+    <div class="user-info">
+        <p>昵称：<span th:text="${nickname}"></span></p>
+        <p>用户名：<span th:text="${username}"></span></p>
+        <button id="home" onclick="window.location.href='home'">进入资源站</button>
+    </div>
+</section>
+<footer>
+    <p>版权所有 &copy; 2023 - 桐谷たけち</p>
+</footer>
+<script th:src="@{/static/sign.js}"></script>
+</body>
+</html>
